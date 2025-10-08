@@ -15,7 +15,7 @@ export default function BlogPage() {
       setLoading(true);
       const accessToken = localStorage.getItem("accessToken");
 
-      const response = await fetch("http://localhost:3000/get-all-blogs", {
+      const response = await fetch("https://blog-app-476i.onrender.com/get-all-blogs", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

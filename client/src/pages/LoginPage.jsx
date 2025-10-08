@@ -10,7 +10,7 @@ function LoginPage() {
   async function handleUserRegister(event) {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch("https://blog-app-476i.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -18,7 +18,7 @@ export default function CreateBlogForm() {
     e.preventDefault();
     const accessToken = localStorage.getItem("accessToken");
     try {
-      const response = await fetch("http://localhost:3000/create-blog", {
+      const response = await fetch("https://blog-app-476i.onrender.com/create-blog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
