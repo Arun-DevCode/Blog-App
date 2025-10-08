@@ -190,7 +190,7 @@ app.post(
 );
 
 // Step 5 : GET all blogs
-app.get("/get-all-blogs", authenticate, async (req, res) => {
+app.get("/get-all-blogs",  async (req, res) => {
   try {
     const blogs = await BlogModel.find();
     res.status(200).json(blogs);

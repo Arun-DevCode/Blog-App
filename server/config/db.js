@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 async function DBConnector() {
   try {
     const connection = await mongoose.connect(
-      "mongodb://localhost:27017/Entri-session"
+      "mongodb+srv://arun:TjqRvTljM4SGd2PR@cluster0.ynk007h.mongodb.net/Entri-session?retryWrites=true&w=majority&appName=Cluster0"
     );
 
     if (!connection) {
